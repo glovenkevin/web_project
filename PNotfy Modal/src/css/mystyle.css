@@ -1,0 +1,221 @@
+/* Default Style */
+tr {
+    vertical-align: top;
+}
+
+p, marquee {
+    font-family: "Muli";
+    margin: 0;
+}
+
+a:link, a:active {
+    color: white;
+}
+
+a:visited {
+    color: rgb(94, 157, 194);
+}
+
+a:hover {
+    color: gray;
+}
+
+.btn-danger{
+    background-color: #b95d5d;
+    border-color: thistle;
+}
+
+.btn-danger:hover {
+    background-color: #c56969;
+    border-color: white;
+}
+
+/* Style Pertama */
+.modalWidth{
+    width: 600px;
+}
+
+.modalStyle{
+    height: auto;
+    display: none;
+}
+
+.insideModalStyle {
+    height: auto;
+    border-radius: 1rem 1rem 0px 0px;
+    background-color: #ce7373;
+    padding: 20px;
+}
+
+.belowModalStyle {
+    height: 100px;
+    background-color: white;
+    border-radius: 0px 0px 1rem 1rem;
+}   
+
+.iconStyle {
+    height: 90%;
+    width: 90%;
+}
+
+.textKeterangan{
+    text-align: left;
+    display: flex;
+    margin: auto;
+    color: white;
+}
+
+.contentModalStyle {
+    text-align: center;
+    padding: 25px 0px 20px 0px;
+    font-size: larger;
+    font-family: 'Quicksand';
+    color: #6d6d6d;
+}
+
+.btnModifyStyle {
+    padding: .5rem 5rem;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    font-family: 'Maven Pro';
+    box-shadow: 2px 2px 5px black;
+}
+
+.judulStyle {
+    font-family: "Open Sans";
+    font-size: 2.5rem;
+}
+
+/* Style kedua */
+.insideModalStyle2 {
+    height: auto;
+    border-radius: 1rem 1rem 0px 0px;
+    background-color: white;
+    padding: 20px;
+}
+
+.belowModalStyle2 {
+    height: 100px;
+    background-color: #ce7373;
+    border-radius: 0px 0px 1rem 1rem;
+}   
+
+.warnaTulisan1 {
+    color: black;
+}
+
+.contentModalStyle2 {
+    text-align: center;
+    padding: 25px 0px 20px 0px;
+    font-size: larger;
+    font-family: 'Quicksand';
+    color: white;
+}
+
+/* Style ketiga */
+.modalWidth3{
+    width: 400px;
+}
+
+.modalStyle3{
+    height: auto;
+    display: none;
+}
+
+.insideModalStyle3 {
+    height: auto;
+    border-radius: 1rem 1rem 0px 0px;
+    background-color: #ce7373;
+    padding: 25px;
+}
+
+.belowModalStyle3 {
+    max-height: 120px;
+    background-color: white;
+    border-radius: 0px 0px 1rem 1rem;
+}   
+
+.contentModalStyle3 {
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    font-size: larger;
+    font-family: 'Quicksand';
+    color: #6d6d6d;
+}
+
+.iconStyle3 {
+    height: 35%;
+    width: 35%;
+}
+
+.hr1 {
+    border-color: white;
+    border-width: 0.5px;
+}
+
+.textKeterangan3{
+    text-align: left;
+    display: flex;
+    margin: auto;
+    color: white;
+    padding: 0px 10px;
+}
+
+/* Style keempat */
+.modalWidth4{
+    width: 400px;
+}
+
+.modalStyle4{
+    height: auto;
+    display: none;
+}
+
+.insideModalStyle4 {
+    height: auto;
+    border-radius: 1rem 1rem 0px 0px;
+    background-color: #ce7373;
+    padding: 25px 25px 10px;
+}
+
+.midleContentStyle4 {
+    background-color: white;
+}
+
+.belowModalStyle4 {
+    max-height: 120px;
+    background-color: #ce7373;
+    border-radius: 0px 0px 1rem 1rem;
+}   
+
+.contentModalStyle4 {
+    text-align: center;
+    padding: 20px 5px 20px 5px;
+    font-size: larger;
+    font-family: 'Quicksand';
+    color: white;
+}
+
+.iconStyle4 {
+    height: 35%;
+    width: 35%;
+}
+
+.hr2 {
+    border-color: white;
+    border-width: 0.5px;
+    padding: 0;
+}
+
+.textKeterangan4{
+    text-align: left;
+    display: flex;
+    margin: auto;
+    color: gray;
+    padding: 20px 10px;
+}
+
+.garisPembatas4 {
+    height: 0.125rem;
+    background-color: maroon;
+}

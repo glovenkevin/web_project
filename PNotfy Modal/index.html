@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script type="text/javascript" src="src/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="src/js/jquery.bpopup.min.js" ></script>
+    <script type="text/javascript" src="src/js/bootstrap.min.js"></script>
+    
+    <link href="src/css/bootstrap.min.css" rel="stylesheet">
+    <link href="src/css/mystyle.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:600|Maven+Pro:500|Open+Sans:600|Muli:500&display=swap" rel="stylesheet"> 
+    
+</head>
+<body style="padding: 2%;">
+    <button id="btnCoba" class="btn btn-success" >Hit me 1 !</button>
+    <button id="btnCoba2" class="btn btn-success" >Hit me 2 !</button>
+    <button id="btnCoba3" class="btn btn-success" >Hit me 3 !</button>
+    <button id="btnCoba4" class="btn btn-success" >Hit me 4 !</button>
+
+    <!-- modal yang ditampilkan -->
+    <div id="hlWorld" class="modalStyle modalWidth">
+        <div class="insideModalStyle container modalWidth">
+            <div class="row">
+                <div class="col-md-6 d-flex justify-content-center align-items-center" style="padding-right: 0px; padding-left: 0;">
+                    <img src="img/warning.svg" alt="Warning Image" class="iconStyle">
+                </div>
+                <div class="col-md-6 textKeterangan" style="padding-left: 0;">
+                    <div class="container" style="padding: 0;">
+                        <table style="width: 100%;">
+                            <tr>
+                                <td style="width:50%;" >
+                                    <p>Collector Name</p>
+                                </td>
+                                <td>
+                                    <p id=colName></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Location</p>
+                                </td>
+                                <td>
+                                    <p>: Lat=1231231, Long=12512412</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Emergency Date</p>
+                                </td>
+                                <td>
+                                    <p id=tanggalJam></p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="belowModalStyle modalWidth">
+            <div class="contentModalStyle" >
+                <p id=hint1></p>
+            </div>
+            <div class="d-flex justify-content-center" >
+                <button type="button" class="btn btn-danger btnModifyStyle b-close">DIED!</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal 2 yang ditampilkan -->
+    <div id="hlWorld2" class="modalStyle modalWidth">
+        <div class="insideModalStyle2 container modalWidth">
+            <div class="row">
+                <div class="col-md-6 d-flex justify-content-center align-items-center" style="padding-right: 0px; padding-left: 0;">
+                    <img src="img/warningmerah.svg" alt="Warning Image" class="iconStyle">
+                </div>
+                <div class="col-md-6 textKeterangan" style="padding-left: 0;">
+                    <div class="container" style="padding: 0;">
+                        <table style="width: 100%;" class="warnaTulisan1">
+                            <tr>
+                                <td style="width:50%;" >
+                                    <p>Collector Name</p>
+                                </td>
+                                <td>
+                                    <p id=colName2></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Location</p>
+                                </td>
+                                <td>
+                                    <p>: Lat=1231231, Long=12512412</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Emergency Date</p>
+                                </td>
+                                <td>
+                                    <p id=tanggalJam2></p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="belowModalStyle2 modalWidth">
+            <div class="contentModalStyle2" >
+                <p id=hint2></p>
+            </div>
+            <div class="d-flex justify-content-center" >
+                <button type="button" class="btn btn-danger btnModifyStyle b-close">DIED!</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal yang ditampilkan3 -->
+    <div id="hlWorld3" class="modalStyle modalWidth3">
+        <div class="insideModalStyle3 container modalWidth3">
+            <div class="row justify-content-center align-items-center">
+                <img src="img/warning.svg" alt="Warning Image" class="iconStyle3">
+            </div>
+            <hr>
+            <div class="row">
+                <div class="textKeterangan3" >
+                    <div class="container" >
+                        <table style="width: 100%;">
+                            <tr>
+                                <td style="width:50%;" >
+                                    <p>Collector Name</p>
+                                </td>
+                                <td>
+                                    <p id=colName3></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Location</p>
+                                </td>
+                                <td>
+                                    <p>: <a href="http://www.google.com" >Show in Map</a></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Emergency Date</p>
+                                </td>
+                                <td>
+                                    <p id=tanggalJam3></p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="belowModalStyle3 modalWidth3">
+            <div class="contentModalStyle3" >
+                <p id=hint3></p>
+            </div>
+            <div class="d-flex justify-content-center" >
+                <button type="button" class="btn btn-danger btnModifyStyle b-close">DIED!</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal yang ditampilkan4 -->
+    <div id="hlWorld4" class="modalStyle modalWidth4">
+        <div class="insideModalStyle4 container modalWidth4">
+            <div class="row justify-content-center align-items-center">
+                <img src="img/warning.svg" alt="Warning Image" class="iconStyle3">
+            </div>
+            
+        </div>
+        <div class="garisPembatas4" ></div>
+        <div class="container midleContentStyle4">
+            <div class="row">
+                <div class="textKeterangan4" >
+                    <div class="container" >
+                        <table style="width: 100%;">
+                            <tr>
+                                <td style="width:50%;" >
+                                    <p>Collector Name</p>
+                                </td>
+                                <td>
+                                    <p id=colName4></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Location</p>
+                                </td>
+                                <td>
+                                    <p>: <a href="http://www.google.com" >Show in Map</a></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Emergency Date</p>
+                                </td>
+                                <td>
+                                    <p id=tanggalJam4></p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="belowModalStyle4 modalWidth4">
+            <div class="contentModalStyle4" >
+                <p id=hint4></p>
+            </div>
+            <div class="d-flex justify-content-center" >
+                <button type="button" class="btn btn-danger btnModifyStyle b-close">DIED!</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $('#btnCoba').click(function() {
+            $('#hlWorld').bPopup({
+                opacity: 0.5,
+                modalClose: false
+            });
+        });
+
+        $('#btnCoba2').click(function() {
+            $('#hlWorld2').bPopup({
+                opacity: 0.5,
+                modalClose: false
+            });
+        });
+
+        $('#btnCoba3').click(function() {
+            $('#hlWorld3').bPopup({
+                opacity: 0.5,
+                modalClose: false
+            });
+        });
+
+        $('#btnCoba4').click(function() {
+            $('#hlWorld4').bPopup({
+                opacity: 0.5,
+                modalClose: false
+            });
+        });
+        
+        $('#hlWorld4').bPopup({
+            opacity: 0.5,
+            modalClose: false
+        });
+
+        document.getElementById("colName").innerHTML = ": Anggita M."
+        document.getElementById("tanggalJam").innerHTML  =": " + new Date();
+
+        document.getElementById("colName2").innerHTML = ": Anggita M."
+        document.getElementById("tanggalJam2").innerHTML  =": " + new Date();
+
+        document.getElementById("colName3").innerHTML = ": Anggita M."
+        document.getElementById("tanggalJam3").innerHTML  =": " + new Date();
+
+        document.getElementById("colName4").innerHTML = ": Anggita M."
+        document.getElementById("tanggalJam4").innerHTML  =": " + new Date();
+
+        document.getElementById("hint1").innerHTML = "Stay Calm and don't forget to drink your Coffee!"
+        document.getElementById("hint2").innerHTML = "Stay Calm and don't forget to drink your Coffee!"
+        document.getElementById("hint3").innerHTML = "Stay Calm and don't forget to drink your Coffee and Good luck for your memberlife!"
+        document.getElementById("hint4").innerHTML = "Stay Calm and don't forget to drink your Coffee and Good luck for your memberlife!"
+
+    </script>
+</body>
+</html>
