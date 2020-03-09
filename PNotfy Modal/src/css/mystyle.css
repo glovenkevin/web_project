@@ -9,7 +9,7 @@ p, marquee {
 }
 
 a:link, a:active {
-    color: white;
+    color: brown;
 }
 
 a:visited {
@@ -30,7 +30,7 @@ a:hover {
     border-color: white;
 }
 
-/* Style Pertama */
+/* ------------------------------------- Style Pertama -----------------------------------*/
 .modalWidth{
     width: 600px;
 }
@@ -73,20 +73,26 @@ a:hover {
     color: #6d6d6d;
 }
 
-.btnModifyStyle {
-    padding: .5rem 5rem;
-    border-radius: 2rem;
-    font-size: 1.2rem;
-    font-family: 'Maven Pro';
-    box-shadow: 2px 2px 5px black;
-}
-
 .judulStyle {
     font-family: "Open Sans";
     font-size: 2.5rem;
 }
 
-/* Style kedua */
+.btnModifyStyle1 {
+    padding: .5rem 5rem;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    font-family: 'Maven Pro';
+    color: white;
+    background-color: #F45A4F;
+    box-shadow: 2px 2px 5px black;
+}
+
+.btnModifyStyle1:hover {
+    background: rgb(179, 42, 32);
+}
+
+/*------------------------------------- Style kedua ------------------------------------*/
 .insideModalStyle2 {
     height: auto;
     border-radius: 1rem 1rem 0px 0px;
@@ -112,9 +118,24 @@ a:hover {
     color: white;
 }
 
-/* Style ketiga */
+.btnModifyStyle2 {
+    padding: .5rem 5rem;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    font-family: 'Maven Pro';
+    color: white;
+    background-color: #2C3045;
+    box-shadow: 2px 2px 5px black;
+}
+
+.btnModifyStyle2:hover {
+    background: #F45A4F;
+}
+
+/* ------------------------------------- Style ketiga ---------------------------------- */
 .modalWidth3{
     width: 400px;
+    box-shadow: 5px 5px 8px #888888;
 }
 
 .modalStyle3{
@@ -124,24 +145,16 @@ a:hover {
 
 .insideModalStyle3 {
     height: auto;
-    border-radius: 1rem 1rem 0px 0px;
-    background-color: #ce7373;
+    border-radius: 0.3rem 0.3rem 0px 0px;
+    background-color: white;
     padding: 25px;
 }
 
 .belowModalStyle3 {
     max-height: 120px;
-    background-color: white;
-    border-radius: 0px 0px 1rem 1rem;
+    background-color: #F45A4F;
+    border-radius: 0px 0px 0.3rem 0.3rem;
 }   
-
-.contentModalStyle3 {
-    text-align: center;
-    padding: 20px 0px 20px 0px;
-    font-size: larger;
-    font-family: 'Quicksand';
-    color: #6d6d6d;
-}
 
 .iconStyle3 {
     height: 35%;
@@ -157,13 +170,29 @@ a:hover {
     text-align: left;
     display: flex;
     margin: auto;
-    color: white;
+    color: gray;
     padding: 0px 10px;
 }
 
-/* Style keempat */
+.btnModifyStyle3 {
+    width: 100%;
+    padding: 1rem 0rem;
+    border-radius: 0px 0px 0.3rem 0.3rem;
+    font-size: 1.2rem;
+    font-family: 'Maven Pro';
+    color: white;
+    background-color: rgb(179, 42, 32);
+}
+
+.btnModifyStyle3:hover {
+    background: #F45A4F;
+}
+
+/* ------------------------------------- Style keempat ----------------------------*/
 .modalWidth4{
-    width: 400px;
+    width: 450px;
+    background-color: #eeeeee;
+    border-radius: 0.25rem;
 }
 
 .modalStyle4{
@@ -172,33 +201,25 @@ a:hover {
 }
 
 .insideModalStyle4 {
-    height: auto;
-    border-radius: 1rem 1rem 0px 0px;
-    background-color: #ce7373;
-    padding: 25px 25px 10px;
-}
-
-.midleContentStyle4 {
-    background-color: white;
+    height: 65px;
 }
 
 .belowModalStyle4 {
     max-height: 120px;
-    background-color: #ce7373;
-    border-radius: 0px 0px 1rem 1rem;
+    padding: 15px 10px 35px 10px;
 }   
 
 .contentModalStyle4 {
     text-align: center;
-    padding: 20px 5px 20px 5px;
-    font-size: larger;
+    padding: 20px 5px 10px 5px;
     font-family: 'Quicksand';
-    color: white;
+    color: grey;
 }
 
 .iconStyle4 {
     height: 35%;
     width: 35%;
+    position: absolute;
 }
 
 .hr2 {
@@ -212,10 +233,31 @@ a:hover {
     display: flex;
     margin: auto;
     color: gray;
-    padding: 20px 10px;
+    padding: 10px 25px 5px 25px;
+}
+
+.judulEmergency4 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: brown;
 }
 
 .garisPembatas4 {
     height: 0.125rem;
     background-color: maroon;
+}
+
+.btnModifyStyle4 {
+    padding: 0.45rem 3rem;
+    border-radius: 0.35rem;
+    font-size: 1.2rem;
+    font-family: 'Maven Pro';
+    color: white;
+    background-color: #2C3045;
+}
+
+.btnModifyStyle4:hover {
+    background-color: rgb(72, 77, 100);
 }

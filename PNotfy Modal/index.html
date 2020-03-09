@@ -10,7 +10,7 @@
     
     <link href="src/css/bootstrap.min.css" rel="stylesheet">
     <link href="src/css/mystyle.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:600|Maven+Pro:500|Open+Sans:600|Muli:500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:600|Maven+Pro:400|Open+Sans:600|Muli:500&display=swap" rel="stylesheet"> 
     
 </head>
 <body style="padding: 2%;">
@@ -63,7 +63,7 @@
                 <p id=hint1></p>
             </div>
             <div class="d-flex justify-content-center" >
-                <button type="button" class="btn btn-danger btnModifyStyle b-close">DIED!</button>
+                <button type="button" class="btn btn-danger btnModifyStyle1 b-close">DIED!</button>
             </div>
         </div>
     </div>
@@ -112,18 +112,18 @@
                 <p id=hint2></p>
             </div>
             <div class="d-flex justify-content-center" >
-                <button type="button" class="btn btn-danger btnModifyStyle b-close">DIED!</button>
+                <button type="button" class="btn btn-danger btnModifyStyle2 b-close">DIED!</button>
             </div>
         </div>
     </div>
 
-    <!-- modal yang ditampilkan3 -->
+    <!-- modal 3 yang ditampilkan -->
     <div id="hlWorld3" class="modalStyle modalWidth3">
         <div class="insideModalStyle3 container modalWidth3">
             <div class="row justify-content-center align-items-center">
-                <img src="img/warning.svg" alt="Warning Image" class="iconStyle3">
+                <img src="img/warning_merahgelap.svg" alt="Warning Image" class="iconStyle3">
             </div>
-            <hr>
+            <br>
             <div class="row">
                 <div class="textKeterangan3" >
                     <div class="container" >
@@ -158,28 +158,26 @@
             </div>
         </div>
         <div class="belowModalStyle3 modalWidth3">
-            <div class="contentModalStyle3" >
-                <p id=hint3></p>
-            </div>
             <div class="d-flex justify-content-center" >
-                <button type="button" class="btn btn-danger btnModifyStyle b-close">DIED!</button>
+                <button type="button" class="btn btnModifyStyle3 b-close">Dismiss!</button>
             </div>
         </div>
     </div>
 
-    <!-- modal yang ditampilkan4 -->
-    <div id="hlWorld4" class="modalStyle modalWidth4">
-        <div class="insideModalStyle4 container modalWidth4">
+    <!-- modal 4 yang ditampilkan -->
+    <div id="hlWorld4" class="modalStyle4 modalWidth4">
+        <div class="container insideModalStyle4">
             <div class="row justify-content-center align-items-center">
-                <img src="img/warning.svg" alt="Warning Image" class="iconStyle3">
+                <img src="img/warning_gelombang.svg" alt="Warning Image" class="iconStyle4">
             </div>
-            
         </div>
-        <div class="garisPembatas4" ></div>
-        <div class="container midleContentStyle4">
+        <div class="container">
             <div class="row">
                 <div class="textKeterangan4" >
                     <div class="container" >
+                        <div class="judulEmergency4">
+                            EMERGENCY!
+                        </div>
                         <table style="width: 100%;">
                             <tr>
                                 <td style="width:50%;" >
@@ -206,16 +204,16 @@
                                 </td>
                             </tr>
                         </table>
+                        <div class="contentModalStyle4" >
+                            <p id=hint4></p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="belowModalStyle4 modalWidth4">
-            <div class="contentModalStyle4" >
-                <p id=hint4></p>
-            </div>
             <div class="d-flex justify-content-center" >
-                <button type="button" class="btn btn-danger btnModifyStyle b-close">DIED!</button>
+                <button type="button" class="btn btnModifyStyle4 b-close">Dismiss!</button>
             </div>
         </div>
     </div>
@@ -249,10 +247,10 @@
             });
         });
         
-        $('#hlWorld4').bPopup({
-            opacity: 0.5,
-            modalClose: false
-        });
+        // $('#hlWorld4').bPopup({
+        //     opacity: 0.5,
+        //     modalClose: false
+        // });
 
         document.getElementById("colName").innerHTML = ": Anggita M."
         document.getElementById("tanggalJam").innerHTML  =": " + new Date();
@@ -268,7 +266,6 @@
 
         document.getElementById("hint1").innerHTML = "Stay Calm and don't forget to drink your Coffee!"
         document.getElementById("hint2").innerHTML = "Stay Calm and don't forget to drink your Coffee!"
-        document.getElementById("hint3").innerHTML = "Stay Calm and don't forget to drink your Coffee and Good luck for your memberlife!"
         document.getElementById("hint4").innerHTML = "Stay Calm and don't forget to drink your Coffee and Good luck for your memberlife!"
 
     </script>
