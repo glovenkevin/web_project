@@ -192,7 +192,8 @@
                                     <p>Location</p>
                                 </td>
                                 <td>
-                                    <p>: <a href="http://www.google.com" >Show in Map</a></p>
+                                    <p>: <a id=linkLocation >Show Location</a></p>
+                                    <p id=longLat ></p>
                                 </td>
                             </tr>
                             <tr>
@@ -251,6 +252,14 @@
         //     opacity: 0.5,
         //     modalClose: false
         // });
+
+        // Setting location
+        var loc = document.getElementById("linkLocation");
+        loc.innerText = "Show Location";
+        loc.href = "https://www.google.com";
+
+        loc = document.getElementById("longLat");
+        loc.innerHTML = "12312121,12412412";
 
         document.getElementById("colName").innerHTML = ": Anggita M."
         document.getElementById("tanggalJam").innerHTML  =": " + new Date();

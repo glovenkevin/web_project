@@ -222,12 +222,6 @@ a:hover {
     position: absolute;
 }
 
-.hr2 {
-    border-color: white;
-    border-width: 0.5px;
-    padding: 0;
-}
-
 .textKeterangan4{
     text-align: left;
     display: flex;
