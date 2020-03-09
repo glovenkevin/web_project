@@ -18,6 +18,7 @@
     <button id="btnCoba2" class="btn btn-success" >Hit me 2 !</button>
     <button id="btnCoba3" class="btn btn-success" >Hit me 3 !</button>
     <button id="btnCoba4" class="btn btn-success" >Hit me 4 !</button>
+    <button id="btnCoba5" class="btn btn-success" >Hit me 5 with bootstrap !</button>
 
     <!-- modal yang ditampilkan -->
     <div id="hlWorld" class="modalStyle modalWidth">
@@ -219,6 +220,68 @@
         </div>
     </div>
 
+    <!-- modal 5 yang ditampilkan dengan Bootstrap -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog" >
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="container insideModalStyle5">
+                    <div class="row justify-content-center">
+                        <img src="img/warning_gelombang.svg" alt="Warning Image" class="iconStyle5">
+                    </div>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="textKeterangan5" >
+                        <div class="container" >
+                            <div class="judulEmergency5">
+                                EMERGENCY!
+                            </div>
+                            <table style="width: 100%;">
+                                <tr>
+                                    <td style="width:50%;" >
+                                        <p>Collector Name</p>
+                                    </td>
+                                    <td>
+                                        <p id=colName5></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>Location</p>
+                                    </td>
+                                    <td>
+                                        <p>: <a id=linkLocation2 >Show Location</a></p>
+                                        <p id=longLat2 ></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>Emergency Date</p>
+                                    </td>
+                                    <td>
+                                        <p id=tanggalJam5></p>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="contentModalStyle5" >
+                                <p id=hint5></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Modal footer -->
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btnModifyStyle4" data-dismiss="modal">Dismiss!</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <script type="text/javascript">
         $('#btnCoba').click(function() {
             $('#hlWorld').bPopup({
@@ -247,18 +310,33 @@
                 modalClose: false
             });
         });
+
+        $('#btnCoba5').click(function() {
+            $('#myModal').modal({
+                backdrop: 'static',
+                keyboard: false
+            });
+        });
         
         // $('#hlWorld4').bPopup({
         //     opacity: 0.5,
         //     modalClose: false
         // });
 
-        // Setting location
+        // Setting location4
         var loc = document.getElementById("linkLocation");
         loc.innerText = "Show Location";
         loc.href = "https://www.google.com";
 
         loc = document.getElementById("longLat");
+        loc.innerHTML = "12312121,12412412";
+
+        // Setting location5
+        var loc = document.getElementById("linkLocation2");
+        loc.innerText = "Show Location";
+        loc.href = "https://www.google.com";
+
+        loc = document.getElementById("longLat2");
         loc.innerHTML = "12312121,12412412";
 
         document.getElementById("colName").innerHTML = ": Anggita M."
@@ -273,9 +351,13 @@
         document.getElementById("colName4").innerHTML = ": Anggita M."
         document.getElementById("tanggalJam4").innerHTML  =": " + new Date();
 
-        document.getElementById("hint1").innerHTML = "Stay Calm and don't forget to drink your Coffee!"
-        document.getElementById("hint2").innerHTML = "Stay Calm and don't forget to drink your Coffee!"
-        document.getElementById("hint4").innerHTML = "Stay Calm and don't forget to drink your Coffee and Good luck for your memberlife!"
+        document.getElementById("colName5").innerHTML = ": Anggita M."
+        document.getElementById("tanggalJam5").innerHTML  =": " + new Date();
+
+        document.getElementById("hint1").innerHTML = "Stay Calm and don't forget to drink your Coffee!";
+        document.getElementById("hint2").innerHTML = "Stay Calm and don't forget to drink your Coffee!";
+        document.getElementById("hint4").innerHTML = "Stay Calm and don't forget to drink your Coffee and Good luck for your memberlife!";
+        document.getElementById("hint5").innerHTML = "Stay Calm and don't forget to drink your Coffee and Good luck for your memberlife!";
 
     </script>
 </body>
